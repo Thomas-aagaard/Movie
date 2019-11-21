@@ -1,0 +1,94 @@
+*:focus {
+    outline: none;
+}
+
+
+body {
+    background-color: #fff;
+    border-radius: 100%;
+    animation-name: bodyChange;
+    animation-duration: 6s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+header {
+
+    text-align: center;
+    font-family: 'Cinzel Decorative', sans-serif;
+    margin-bottom: 8%;
+    font-size: 2em;
+}
+#clock span {
+    float: left;
+    text-align: center;
+    margin: 0 2.5%;
+    padding: 20px;
+    width: 20%;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Mountains of Christmas', sans-serif;
+    font-size: 50px;
+}
+#counter span {
+    background-color: #000000;
+    border-radius: 100%;
+    animation-name: colorChange;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    border: 3px solid white;
+
+}
+
+#counter span, button {
+    box-shadow: 4px 4px 15px #000000;
+}
+
+#counter span:nth-child(odd) {
+    animation-name: bwColorChange;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes colorChange {
+    0%, 100% {
+        background-color: #42f471;
+
+    }
+    50% {
+        background-color: #ea524f;
+
+    }
+}
+
+@keyframes bwColorChange {
+    0%, 100% {
+        background-color: #ea524f;
+
+    }
+    50% {
+        background-color: #42f471;
+
+    }
+}
+#head {
+    text-align: left;
+    margin-left: 5%;
+    color: white;
+}
+#subhead {
+    color:#fff;
+}
+#wrapper {
+    background-image: url("../Images/Christmas-Tree.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+}
+
+
+

@@ -1,0 +1,198 @@
+
+    body {
+        margin: auto;
+        width: 1200px;
+
+        background-image: linear-gradient( to right , #fff, red, #fff);
+    }
+    nav {
+        background: #000000b3;
+    }
+    nav ul li {
+        text-decoration: none;
+        display: inline-block;
+        padding: 2%;
+    }
+    nav ul li a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    nav ul li a:hover {
+        color: Yellow;
+        text-decoration: underline;
+    }
+    h1 {
+        text-align: center;
+    }
+    .wrapper {
+        display: grid;  /* Defining that I want to use grid */
+        grid-template-columns: 380px 400px 400px; /* size of boxes */
+        grid-gap: 10px;
+        background-color: #fa11110a;
+        color: #444;
+    }
+    /* All columns sets here */
+    .box {
+        background-color: #0000009e;
+        color: #fff;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 150%;
+    }
+    h2{
+        font-size: 1.1em;
+        text-shadow: 0px 3px 3px #000000;
+    }
+
+    .director, .actor, .ratings, .released {
+        font-size: 0.9em;
+    }
+    .description {
+        font-size: 0.9em;
+    }
+    .link-video a {
+    color:#fff;
+
+    margin-left: 40%;
+    background: #fa11110a;
+    padding: 3px;
+    }
+    .link-video a:hover {
+        color:yellow !important;
+        background:#000;
+
+        padding: 3px;
+    }
+  /* Column 2*/
+    .b {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+/* Column 1 */
+    .a {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+/* Column 3 */
+    .c {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .top-bar {
+        /* Now this item will cover the entire columns of this grid */
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    #div1 {
+        color: #ffffff;
+        text-align: center;
+        text-shadow: 5px 5px 5px #444444;
+        font-size: 20px;
+    }
+
+
+    /* Center image on movie page */
+    .image {
+        margin: 0 10%;
+    }
+
+    /*Center title */
+    .wrapper > .box > h2 {
+    text-align: center;
+    }
+
+
+    /* Table queries */
+@media only screen and (max-device-width: 768px) {
+    body {
+        width: 100%;
+    }
+     nav ul li a{
+        font-size: 2em;
+    }
+    .wrapper {
+        
+       display: grid;
+       grid-template-columns: 300px 300px 300px; /* size of boxes */
+       grid-gap: 10px;
+    }
+    .box {
+        display:block;
+        width:80%;
+        border-radius: 20px;
+        margin:5% 7%;
+    }
+     h2{
+        font-size: 1.5em;
+        margin: 5% 0 5%;
+    }
+     h1 {
+        font-size: 3em;
+    }
+    .director, .actor, .ratings, .released, .description, {
+        font-size: 1.2em;
+    }
+    .link-video a {
+        font-size: 1.2em;
+    }
+    .image {
+        width: 90%;
+        margin: 0 5%;
+    }
+}
+
+/* Mobile queries */
+@media only screen and (max-device-width: 480px) {
+    body {
+        background-color: olive;
+        width: 100%;
+    }
+      nav ul li a{
+        font-size: 2em;
+    }
+
+    .wrapper {
+        margin: 0 5% 0 5%;
+        display: block;
+
+    }
+    .box {
+        display:block;
+        width:80%;
+        background: #0000009e;
+        color:#fff;
+        border-radius: 30px;
+        margin:5% 7%;
+    }
+     h2{
+        font-size: 2em;
+        margin: 5% 0 5%;
+    }
+     .image {
+        width: 80%;
+    }
+    .description, .director, .ratings, .released {
+   margin:5% 5%;
+    }
+    .actor {
+        margin: 5% 5% 5% 5%;
+    }
+     h1 {
+        font-size: 5em;
+    }
+    .director, .actor, .ratings, .released, .description {
+        font-size: 1.5em;
+    }
+    .link-video a {
+        font-size: 1.5em;
+    }
+}
