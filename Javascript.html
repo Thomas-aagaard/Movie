@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+</head>
+<body>
+<nav>
+    <ul>
+        <li>
+            <a href="Index.html">Movie site</a>
+        </li>
+
+        <li>
+            <a href="webpage.html">Webpage</a>
+        </li>
+        <li>
+            <a href="Christmas.html">Christmas</a>
+        </li>
+        <li>
+            <a href="grid-work.html">Grid</a>
+        </li>
+        <li>
+            <a href="Flexbox.html">Flexbox</a>
+        </li>
+        <li>
+            <a href="Javascript.html">Javascript</a>
+        </li>
+        <li>
+            <a href="DomStyle.html">DOM Style</a>
+        </li>
+        <li>
+            <a href="calculator.html">Calculator</a>
+        </li>
+    </ul>
+</nav>
+<br><br>
+<h1>
+    Javascript Introduction: Example 1 </h1>
+<h2> Variables, Arrays, Functions, Events.
+</h2>
+<br>
+<br>
+
+<ul>
+    <p id = "list"> Thomas </p>
+</ul>
+
+<form>
+    <!-- here we put on our eventlistener for the onClick event -->
+    <input type = "button" value = "Sort the list" onclick="sortList();">
+    <br>
+    <br>
+    <input type = "button" value = "Reverse " onclick="sortListreverce();">
+    <br>
+    <br>
+    <input type = "button" value ="Add to list " onclick="addList();">
+    <input type = "text" value = "name" id="newName">
+    <br>
+    <br>
+    <input type = "button" value ="Delete list" onclick="deleteList();">
+
+</form>
+
+<h3>My age </h3>
+<form>
+
+    <input type = "button" value ="calculate" onclick="calculateYear();">
+    <input type = "text" value = "1990" id="myyear"> Are Using the value of the input field that is set in input field code directly. That is how is calculated.
+</form>
+<span id = "result"></span>
+<!-- Simple  calculation -->
+<!-- <script>
+    function calculateYear(year) { // so it only take birth year as an argument
+        //   document.getElementById("myyear").value;
+        var currentYear = new Date().getFullYear();
+        return currentYear - year;
+
+    }
+    document.write('You age is' + calculateYear(1995) + ' year old ')
+</script>  --->
+<!-- this line will include the script file -->
+<script type = "text/javascript" src = "Javascript/Myfirst.js"></script>
+<h3>Another example with javascript</h3>
+<script>
+
+    var woords ="This is ";
+    var morewords =" a sentence";
+    var sentence = woords + morewords;
+    document.write(sentence);
+
+
+/* Using a Array method */
+    var a = new Array(5);
+    a [0] = "Yellow ";
+    a [1] = "Green ";
+    a [2] = 95;
+    a [3] = "Blue ";
+    a [4] = true;
+    document.write("<br/> <br/>", a[1]);
+
+    /* Another way to do array instead of the code abbow */
+    var b = new Array(" Dog", " Cat", 53, true);
+    document.write(b[0]);
+
+    /*Using function*/
+    function Sayhello(who) {
+        document.write("Hello" + who);
+    }
+    document.write("<br/><br/>");
+    Sayhello("Bob");
+    document.write("<br/>");
+
+    Sayhello("Mary");
+</script>
+</body>
+
+</html>
